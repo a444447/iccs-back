@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+# mybaties
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/year_design?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: mao20010225
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+mybatis:
+  #  映射文件位置
+  mapper-locations: classpath:mapper/*.xml
+  #  别名
+  type-aliases-package: com.example.demo.entity
+  #  驼峰转化
+  configuration:
+    map-underscore-to-camel-case: true
