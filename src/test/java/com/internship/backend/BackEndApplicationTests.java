@@ -2,7 +2,6 @@ package com.internship.backend;
 
 import com.internship.backend.entity.DUser;
 import com.internship.backend.mapper.UserMapper;
-import org.apache.catalina.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -20,7 +19,8 @@ class BackEndApplicationTests {
         DUser.setId(4);
         DUser.setUName("123");
         DUser.setUPassword("1234");
-        userMapper.insert(DUser);
+        userMapper.select(DUser.getId());
+        System.out.println(userMapper.select(DUser.getId()));
     }
 
 }
