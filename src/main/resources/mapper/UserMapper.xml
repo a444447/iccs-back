@@ -24,7 +24,4 @@
         select * from user where id=#{id,jdbcType=INTEGER}
     </select>
 
-    <select id="login" parameterType="java.lang.String" resultMap="BaseResultMap">
-        select * from user where u_name=#{username,jdbcType=VARCHAR}
-    </select>
 </mapper>
