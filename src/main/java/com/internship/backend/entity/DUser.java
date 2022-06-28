@@ -1,6 +1,6 @@
 package com.internship.backend.entity;
 
-public class user {
+public class DUser {
 
     public int id;
     public String UName;
