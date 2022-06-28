@@ -1,10 +1,12 @@
 package com.internship.backend.mapper;
 
-import com.internship.backend.entity.user;
-import org.apache.ibatis.annotations.Mapper;
+import com.internship.backend.entity.DUser;
 
-@Mapper
 public interface UserMapper {
-    int insert(user user);
+    int insert(DUser DUser);
+
+    DUser select(int id);
+
+    DUser login(String username);
 
 }

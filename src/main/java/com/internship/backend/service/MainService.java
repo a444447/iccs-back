@@ -1,4 +1,4 @@
 package com.internship.backend.service;
 
-public class MainService {
+public interface MainService {
 }

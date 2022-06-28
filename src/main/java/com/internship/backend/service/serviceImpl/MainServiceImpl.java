@@ -1,4 +1,6 @@
 package com.internship.backend.service.serviceImpl;
 
-public class MainServiceImpl {
+import com.internship.backend.service.MainService;
+
+public class MainServiceImpl implements MainService {
 }

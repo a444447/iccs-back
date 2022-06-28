@@ -1,10 +1,12 @@
 package com.internship.backend.entity;
 
-public class user {
+import java.io.Serializable;
 
-    public int id;
-    public String UName;
-    public String UPassword;
+public class DUser implements Serializable {
+
+    private int id;
+    private String UName;
+    private String UPassword;
 
     public int getId() {
         return id;
